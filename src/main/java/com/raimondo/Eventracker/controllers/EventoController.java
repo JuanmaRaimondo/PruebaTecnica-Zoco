@@ -29,12 +29,7 @@ public class EventoController {
 
     @PutMapping("/editar/{id}")
     public Evento editarEvento(@PathVariable String id, @RequestBody Evento evento){
-        if(evento.getId() == null){
-            throw new RuntimeException("No se encuentra el id ingresado");
-        }else{
-            Evento eventoEncontrado = eventoService.editarEvento(id, evento);
-            return eventoEncontrado;
-        }
+        return eventoService.editarEvento(id, evento);
     }
 
     @DeleteMapping("/borrar/{id}")

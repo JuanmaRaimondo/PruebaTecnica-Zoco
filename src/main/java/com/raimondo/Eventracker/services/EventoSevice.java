@@ -39,7 +39,7 @@ public class EventoSevice {
 
     //lista de eventos activos
     public List<Evento> traerEventosActivos(){
-       return eventoRepo.traerTodosEventosActivos();
+       return eventoRepo.findByActivoTrue();
     }
 
     //editar datos del evento

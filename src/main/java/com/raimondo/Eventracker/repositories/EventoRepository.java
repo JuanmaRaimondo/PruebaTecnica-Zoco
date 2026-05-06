@@ -9,5 +9,6 @@ import com.raimondo.Eventracker.models.Evento;
 
 @Repository
 public interface EventoRepository extends MongoRepository<Evento, String>{
-    List<Evento> traerTodosEventosActivos();
+
+    List<Evento> findByActivoTrue();
 } 
