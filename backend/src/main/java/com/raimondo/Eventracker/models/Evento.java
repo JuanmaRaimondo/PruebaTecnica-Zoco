@@ -16,7 +16,7 @@ public class Evento {
     private String id;
     private String nombre;
     private String ubicacion;
-    private String Categoria;
+    private String categoria;
     private String fuente;
     private LocalDate fechaEvento;
     private LocalDateTime fechaObtencion;
